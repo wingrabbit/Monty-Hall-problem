@@ -25,8 +25,8 @@ public class MainClass {
 		
 		for(int i=0; i<expCount; i++)
 		{
-			int chosenCard = random.nextInt(cardsCount);					//the card that has been chosen by the player;
-			int realCard = random.nextInt(cardsCount);						//the right card
+			int chosenCard = random.nextInt(cardsCount);			//the card that has been chosen by the player;
+			int realCard = random.nextInt(cardsCount);			//the right card
 			int otherCard = getLeftCard(cardsCount, chosenCard, realCard);	//the card that is left after removal of all the excess cards
 			
 			context.setStrategy(new StrategyKeep());						
